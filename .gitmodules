@@ -1,0 +1,3 @@
+[submodule "extras/react-frontend"]
+	path = extras/react-frontend
+	url = git@github.com:defektive/react-frontend.git

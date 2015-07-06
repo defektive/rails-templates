@@ -45,11 +45,12 @@ after_bundle do
 
   run "rm -rf public"
   directory 'react-frontend', 'react-frontend'
+  run "rm react-frontend/.git"
   run "ln -s react-frontend/public public"
 
   inside 'react-frontend' do
     run "npm install"
-    run "npm run dist"
+    run "npm run build"
   end
 
   git :init
